@@ -1,10 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:developer';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:requests_inspector/requests_inspector.dart';
 import 'package:graphql/client.dart';
+import 'package:requests_inspector/requests_inspector.dart';
 
 Future<List<Post>> fetchPosts() async {
   final dio = Dio(BaseOptions(validateStatus: (_) => true));
@@ -170,7 +171,7 @@ class _MyAppState extends State<MyApp> {
         isLoading = false;
       }),
     );
-    /*for restful apis Interceptor example use => fetchPostsUsingInterceptor() */;
+    /*for restful apis Interceptor example use => fetchPostsUsingInterceptor() */
     // fetchPostsGraphQlUsingGraphQLFlutterInterceptor() /*for graph ql Interceptor example */;
     super.initState();
   }

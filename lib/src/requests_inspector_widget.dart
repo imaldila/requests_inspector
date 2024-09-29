@@ -1,11 +1,13 @@
 import 'dart:io';
+
+import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:collection/collection.dart';
 import 'package:requests_inspector/src/json_pretty_converter.dart';
 import 'package:requests_inspector/src/request_stopper_editor_dialog.dart';
 import 'package:requests_inspector/src/response_stopper_editor_dialog.dart';
+
 import '../requests_inspector.dart';
 
 ///You can show the Inspector by **Shaking** your phone.
@@ -440,9 +442,9 @@ class _Inspector extends StatelessWidget {
 
 class _RunAgainButton extends StatefulWidget {
   const _RunAgainButton({
-    Key? key,
+    super.key,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final Future<void> Function() onTap;
 
