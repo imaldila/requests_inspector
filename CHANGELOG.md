@@ -1,3 +1,17 @@
+## 4.1.2
+
+- Dispose singleton when dispose notifier thanks to [AnthonyXcode](https://github.com/AnthonyXcode).
+
+## 4.1.1
+
+- Downgrade `connectivity_plus` to the most suitable version.
+
+## 4.1.0
+
+- Start depending on `sensor_plus` instead of using `shake` package to handle the shaking event.
+- Start using flutter v3.19.6.
+- Increase the version to `4.1.0` because the `4.0.4` version is a sign of trouble 😅.
+
 ## 4.0.4
 
 - Add a stunning and captivating new logo, thanks to the incredibly talented [Yumna Hossam](https://www.behance.net/yumnahossam). 🎉️🎉️

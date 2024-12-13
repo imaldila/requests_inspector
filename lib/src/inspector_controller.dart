@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:shake/shake.dart';
+import 'package:requests_inspector/src/shake.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../requests_inspector.dart';
@@ -162,6 +162,7 @@ class InspectorController extends ChangeNotifier {
   @override
   void dispose() {
     if (_allowShaking) _shakeDetector.stopListening();
+    _singleton = null;
     super.dispose();
   }
 
